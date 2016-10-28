@@ -3,10 +3,12 @@ module Api::V1
 	  skip_before_action :authenticate_request
 
 	  def authenticate
+
 	  	command = AuthenticateUser.call(params[:email],params[:password])
 
 	  	if command.success?
-	  		render json: {auth_token: command.result}, status: 201
+				credential = command.result
+				render json: {auth_token: credential[:auth_token], role: credential[:role],email: credential[:email],name: credential[:name], success: 1}, status: 201
 	  	else
 	  		render json: {errors: command.errors}, status: :unauthorized
 	  	end

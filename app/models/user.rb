@@ -2,7 +2,7 @@ class User
   include Mongoid::Document
   include ActiveModel::SecurePassword
   has_secure_password
-  has_many :categories
+
   has_many :advertisments
   has_many :articles
   has_many :comments
@@ -10,6 +10,8 @@ class User
   field :email, type: String
   field :password_digest, type: String
   field :role, type: String, default: 'guests'
+  field :name, type: String
+  field :status, type: String
 
   ## Trackable
   field :sign_in_count,      type: Integer, default: 0

@@ -1,19 +1,31 @@
 module Api::V1   
   class ArticlesController < ApplicationController
-    before_action :set_article, only: [:show, :update, :destroy]
+    before_action :set_article_by_category, :set_article, only: [:show, :update, :destroy]
     before_action :admins!, only: [:create, :update, :destroy]
 
 
     # GET /articles
     def index
-      @articles = Article.all
+      if params[:category_id]
+        category = Category.find(params[:category_id])
+
+        @articles = Article.where(categories_id: category.id)
+      else
+        @articles = Article.all
+      end
 
       render json: @articles
+
     end
 
     # GET /articles/1
     def show
       render json: @article.to_json(:include => {:comments => {:include => :users}})
+    end
+
+    # GET /articles/berita
+    def show_by_category
+      render json: @articlebycategory
     end
 
     # POST /articles
@@ -47,9 +59,14 @@ module Api::V1
         @article = Article.find(params[:id])
       end
 
+      def set_article_by_category
+        logger.debug params[:category_id]
+        @articlebycategory = Article.where(cateories_id: params[:category_id])
+      end
+
       # Only allow a trusted parameter "white list" through.
       def article_params
-        params.require(:article).permit(:title, :content, :image, :published_date)
+        params.permit(:title, :content, :image, :published_date, :categories_id, :subcategories_id)
       end
   end
 end

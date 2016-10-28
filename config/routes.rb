@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   	constraints subdomain: 'api' do
   		scope module: 'api' do
@@ -9,6 +10,11 @@ Rails.application.routes.draw do
           resources :advertisments
           resources :articles
           resources :comments
+					resources :subcategories
+
+					resources :categories do
+						resources :articles
+					end
     		end
     	end
     end

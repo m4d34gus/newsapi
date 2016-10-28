@@ -27,5 +27,11 @@ module Newsapi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.autoload_paths << Rails.root.join('lib')
+    config.middleware.insert_before 0, Rack::Cors, :debug => true, :logger => (-> { Rails.logger }) do
+      allow do
+        origins 'http://localhost:3000'
+       resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+    end
   end
 end
