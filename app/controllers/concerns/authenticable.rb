@@ -4,7 +4,7 @@ module Authenticable
   
   def admins!
     render json: { errors: "Not authenticated" },
-                status: :unauthorized unless current_user.role == "admins"
+                status: :unauthorized unless current_user.role == "admin"
   end
 
 end

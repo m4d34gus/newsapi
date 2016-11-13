@@ -1,17 +1,21 @@
 class User
   include Mongoid::Document
   include ActiveModel::SecurePassword
+  include Mongoid::Slug
+
   has_secure_password
 
   has_many :advertisments
   has_many :articles
   has_many :comments
+  has_many :lens
 
   field :email, type: String
   field :password_digest, type: String
   field :role, type: String, default: 'guests'
   field :name, type: String
   field :status, type: String
+  slug :name
 
   ## Trackable
   field :sign_in_count,      type: Integer, default: 0

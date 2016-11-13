@@ -1,0 +1,84 @@
+bigdecimal (1.2.0)
+    Authors: Kenta Murata, Shigeo Kobayashi
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    Arbitrary-precision decimal floating-point number library.
+
+CFPropertyList (2.2.8)
+    Author: Christian Kruse
+    Homepage: http://github.com/ckruse/CFPropertyList
+    License: MIT
+    Installed at: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0
+
+    Read, write and manipulate both binary and XML property lists as
+    defined by apple
+
+io-console (0.4.2)
+    Author: Nobu Nakada
+    Homepage: http://www.ruby-lang.org
+    License: ruby
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    Console interface
+
+json (1.7.7)
+    Author: 
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    This json is bundled with Ruby
+
+libxml-ruby (2.6.0)
+    Authors: Ross Bamform, Wai-Sun Chia, Sean Chittenden, Dan Janwoski,
+    Anurag Priyam, Charlie Savage, Ryan Johnson
+    Homepage: http://xml4r.github.com/libxml-ruby
+    Installed at: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0
+
+    Ruby Bindings for LibXML2
+
+minitest (4.3.2)
+    Author: 
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    This minitest is bundled with Ruby
+
+nokogiri (1.5.6)
+    Authors: Aaron Patterson, Mike Dalessio, Yoko Harada, Tim Elliott
+    Homepage: http://nokogiri.org
+    Installed at: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0
+
+    Nokogiri (Ž?ü) is an HTML, XML, SAX, and Reader parser
+
+psych (2.0.0)
+    Author: Aaron Patterson
+    Homepage: http://github.com/tenderlove/psych
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    Psych is a YAML parser and emitter
+
+rake (0.9.6)
+    Author: 
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    This rake is bundled with Ruby
+
+rdoc (4.0.0)
+    Author: 
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    This rdoc is bundled with Ruby
+
+sqlite3 (1.3.7)
+    Authors: Jamis Buck, Luis Lavena, Aaron Patterson
+    Homepage: http://github.com/luislavena/sqlite3-ruby
+    Installed at: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0
+
+    This module allows Ruby programs to interface with the SQLite3
+    database engine (http://www.sqlite.org)
+
+test-unit (2.0.0.0)
+    Author: Shota Fukumori
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /Library/Ruby/Gems/2.0.0
+
+    test/unit compatible API testing framework

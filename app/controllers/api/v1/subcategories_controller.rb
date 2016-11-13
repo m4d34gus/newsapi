@@ -4,9 +4,16 @@ module Api::V1
 
     # GET /subcategories
     def index
-      @subcategories = Subcategory.all
+      if params[:category_id]
+        category = Category.find(params[:category_id])
 
-      render json: @subcategories
+        @subcategories = Subcategory.where(categories_id: category.id)
+      else
+        @subcategories = Subcategory.all
+      end
+
+
+      render json: @subcategories.to_json(:methods => [:idstring])
     end
 
     # GET /subcategories/1

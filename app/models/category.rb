@@ -12,4 +12,8 @@ class Category
 
   index({ id: 1 }, { unique: true, name: "id_index" })
 
+  def idstring
+    id.to_s
+  end
+
 end

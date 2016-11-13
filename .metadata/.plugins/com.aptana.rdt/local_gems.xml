@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems>
+	<gem>
+		<name>nokogiri</name>
+		<version>1.5.6</version>
+		<description>Nokogiri (é?¸) is an HTML, XML, SAX, and Reader parser</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>test-unit</name>
+		<version>2.0.0.0</version>
+		<description>test/unit compatible API testing framework</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>sqlite3</name>
+		<version>1.3.7</version>
+		<description>This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>io-console</name>
+		<version>0.4.2</version>
+		<description>Console interface</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>CFPropertyList</name>
+		<version>2.2.8</version>
+		<description>Read, write and manipulate both binary and XML property lists as defined by apple</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>libxml-ruby</name>
+		<version>2.6.0</version>
+		<description>Ruby Bindings for LibXML2</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>minitest</name>
+		<version>4.3.2</version>
+		<description>This minitest is bundled with Ruby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>psych</name>
+		<version>2.0.0</version>
+		<description>Psych is a YAML parser and emitter</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rdoc</name>
+		<version>4.0.0</version>
+		<description>This rdoc is bundled with Ruby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rake</name>
+		<version>0.9.6</version>
+		<description>This rake is bundled with Ruby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>json</name>
+		<version>1.7.7</version>
+		<description>This json is bundled with Ruby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>bigdecimal</name>
+		<version>1.2.0</version>
+		<description>Arbitrary-precision decimal floating-point number library.</description>
+		<platform>ruby</platform>
+	</gem>
+</gems>

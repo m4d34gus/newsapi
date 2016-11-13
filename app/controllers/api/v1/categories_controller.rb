@@ -12,7 +12,7 @@ module Api::V1
 
     # GET /categories/1
     def show
-      render json: @category
+      render json: @category.to_json(:methods => [:idstring])
     end
 
 
